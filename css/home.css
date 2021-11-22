@@ -184,6 +184,48 @@ header li.selected a { border-bottom: 4px solid rgba(143, 208, 166, 1); }
     gap: 7px 3%;
 }
 
-.flickr-gallery > ul > li {
-    flex-basis: 22.75%;
+.flickr-gallery > ul > li { flex-basis: 22.75%; }
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
 }
+
+footer > * { margin: 20px 0; }
+
+footer > span { 
+    color: rgba(136, 136, 136, 1);
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+footer > ul { display: flex; }
+footer > ul > li { margin-right: 10px; }
+footer > ul > li:last-child { margin-right: 0; }
+
+footer li > a { 
+    display: inline-block;
+    font-size: 0;  
+}
+
+footer li > a::before {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    background: #fff;
+    color: rgba(136, 136, 136, 1);
+    font-family: "Font Awesome 5 Brands";
+    font-size: 12px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li > a[title="Google Plus"]::before { content: "\f0d5"; }
+footer li > a[title="Twitter"]::before { content: "\f099"; }
+footer li > a[title="Pinterest"]::before { content: "\f231"; }
+footer li > a[title="Dribbble"]::before { content: "\f17d"; }
+footer li > a[title="LinkedIn"]::before { content: "\f0e1"; }
+footer li > a[title="Facebook"]::before { content: "\f39e"; }
