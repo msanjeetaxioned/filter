@@ -23,6 +23,8 @@ figure > img {
     margin: 0 auto;
 }
 
+.display-none { display: none; }
+
 /* Header CSS */
 header {
     padding: 40px 0 30px 0;
@@ -93,7 +95,10 @@ header li.selected a { border-bottom: 4px solid rgba(143, 208, 166, 1); }
     cursor: pointer; 
 }
 
-.filter li.selected > span { background: rgba(143, 208, 166, 1); }
+.filter li.selected > span { 
+    background: rgba(143, 208, 166, 1);
+    color: #fff;
+}
 
 .content {
     margin-bottom: 40px;
