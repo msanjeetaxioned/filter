@@ -70,6 +70,17 @@ header li.selected a { border-bottom: 4px solid rgba(143, 208, 166, 1); }
     font-size: 0;
 }
 
+.hamburger-tablet::before { 
+    content: "\f0c9";
+    color: rgba(136, 136, 136, 1);
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-weight: 900;
+    transition: color 1s ease-in-out;
+}
+
+.hamburger-tablet:hover::before { color: rgba(143, 208, 166, 1); }
+
 /* Main Content CSS/*
 /* Filter & Content */
 .filter-and-content { border-bottom: 1px solid #2e2e2e; }
@@ -241,4 +252,16 @@ footer li > a[title="Facebook"]::before { content: "\f39e"; }
         width: calc(100% - 20px);
         margin: 0 10px;
     }
+
+    header > nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 50%; 
+    }
+
+    header ul { display: block; }
+    header ul > li { display: none; }
+    header ul > li:first-child { display: list-item; }
+    .hamburger-tablet { display: inline-block; }
 }
