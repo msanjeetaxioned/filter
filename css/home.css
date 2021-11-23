@@ -237,8 +237,10 @@ footer li > a::before {
     font-weight: 900;
     justify-content: center;
     align-items: center;
+    transition: color 1s ease-in-out;
 }
 
+footer li > a:hover::before { color: #1f1f1f; }
 footer li > a[title="Google Plus"]::before { content: "\f0d5"; }
 footer li > a[title="Twitter"]::before { content: "\f099"; }
 footer li > a[title="Pinterest"]::before { content: "\f231"; }
