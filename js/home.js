@@ -4,6 +4,31 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let filterSelectedArray = [true, false, false, false, false, false, false];
     let imagesArray = [];
     let jsonData = [];
+    let headerPageLis = wrapper.querySelectorAll("header > nav li");
+    let humburger = wrapper.querySelector(".hamburger-tablet");
+    let humburgerOpen = false;
+    
+    humburger.addEventListener("click", function() {
+        if(humburgerOpen) {
+            for(let i = 0; i < headerPageLis.length; i++) {
+                if(headerPageLis[i].classList[0] == "selected") {
+                    continue;
+                }
+                headerPageLis[i].classList.remove("display-list-item-768");
+                headerPageLis[i].classList.add("display-none-768");
+            }
+        }
+        else {
+            for(let i = 0; i < headerPageLis.length; i++) {
+                if(headerPageLis[i].classList[0] == "selected") {
+                    continue;
+                }
+                headerPageLis[i].classList.remove("display-none-768");
+                headerPageLis[i].classList.add("display-list-item-768");
+            }
+        }
+        humburgerOpen = !humburgerOpen;
+    });
 
     for(let i = 0; i < 16; i++) {
         imagesArray[i] = true;
