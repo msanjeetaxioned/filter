@@ -264,4 +264,6 @@ footer li > a[title="Facebook"]::before { content: "\f39e"; }
     header ul > li { display: none; }
     header ul > li:first-child { display: list-item; }
     .hamburger-tablet { display: inline-block; }
+    .display-list-item-768 { display: list-item; }
+    .display-none-768 { display: none; }
 }
